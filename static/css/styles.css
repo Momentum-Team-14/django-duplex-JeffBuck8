@@ -1,0 +1,9 @@
+h1 {
+    align-items: center;
+    font-family: 'tahoma';
+}
+
+.top_bar {
+    display: flex;
+    text-align: center;
+}

@@ -9,9 +9,9 @@
     <title>Flashcards!</title>
 </head>
 <body>
-    <div>FLASHCARDS</div>
-    <a href="{% url 'list_subject' %}">Subjects</a>
-    <a href="/accounts/logout">Log Out</a>
+    <h1>Flashcards!</h1>
+    <a class="top_bar" href="{% url 'list_subject' %}">Subjects</a>
+    <a class="top_bar" href="/accounts/logout">Log Out</a>
         {% block content %}
         {% endblock %}
 </body>
