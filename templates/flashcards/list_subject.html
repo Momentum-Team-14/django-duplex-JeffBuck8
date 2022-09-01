@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div>Select a subject or click "New" to start a new group of flashcards.</div>
+        <a href="{% url 'subject_new' %}">Add New Subject</a>
+        <div>Current Subjects</div>
+            {% for subject in subjects %}
+            <div>
+                <a href="{% url 'card_questions' pk=subject.pk %}" >{{ subject.subject }}</a>
+                <a href="{% url 'delete_subject' pk=subject.pk %}">Delete</a> 
+                <a href="{% url 'subject_edit' pk=subject.pk %}">Edit</a>
+                </div>
+            {% endfor %}
+{% endblock %}

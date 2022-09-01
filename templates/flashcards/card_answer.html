@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+            <div>Quesiton: {{ card.question }}</div>
+            <div>Answer: {{ card.answer }}</div>
+            <a href="{% url 'card_questions' pk=card.subject.pk %}">Back</a>
+        </div>
+{% endblock %}
